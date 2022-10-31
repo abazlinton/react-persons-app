@@ -24,7 +24,7 @@ function App() {
       }
     })
       .then(res => res.json())
-      .then(personWithId => setPersons([...persons, personWithId]))
+      .then(personWithId => setPersons(prevPersons => [...prevPersons, personWithId]))
   }
   const personLis = persons.map(person => <li key={person.id}>{person.id}: {person.name}</li>)
 
