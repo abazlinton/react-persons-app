@@ -1,7 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 
-const apiUrl = "http://localhost:8080"
+const apiUrl = process.env.NODE_ENV === "development"
+  ? "http://localhost:8080"
+  : "https://abazlinton-spring-persons-api.herokuapp.com"
 
 function App() {
   const [persons, setPersons] = useState([])
