@@ -29,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>My App</h1>
+      <h2>Testing workflow</h2>
       <form onSubmit={handleNameSubmission}>
         <input id="name" type="text"></input>
         <input type="submit"></input>
