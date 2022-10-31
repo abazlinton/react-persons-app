@@ -11,7 +11,7 @@ jobs:
       - run: npm test
 workflows:
   version: 2
-  test-and-building:
+  test-and-build:
     jobs:
       - test:
         filters:
